@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Styles globaux */
+.MuiTableRow-root.Mui-selected {
+  background-color: rgba(25, 118, 210, 0.08) !important;
+}
+
+.MuiTableRow-root.Mui-selected:hover {
+  background-color: rgba(25, 118, 210, 0.12) !important;
+}
+
+/* Animation pour les notifications */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.notification-enter {
+  animation: slideIn 0.3s forwards;
+}
+
+/* Styles pour le calendrier */
+.fc-event {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+.fc-day-today {
+  background-color: rgba(25, 118, 210, 0.05) !important;
+}
+
+.fc-header-toolbar {
+  margin-bottom: 1rem !important;
+}
+
+.fc-toolbar-title {
+  font-size: 1.25rem !important;
+}
+
+/* Styles pour les graphiques */
+.chart-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+/* Styles pour les formulaires */
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Styles pour les cartes */
+.dashboard-card {
+  transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Styles pour les avatars */
+.avatar-group .MuiAvatar-root {
+  border: 2px solid white;
+}
